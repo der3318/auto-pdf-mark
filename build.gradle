@@ -1,0 +1,32 @@
+apply plugin: "java"
+apply plugin: "java-library"
+apply plugin: "com.github.johnrengelman.shadow"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile group: "org.apache.pdfbox", name: "pdfbox", version: "2.0.1"
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.1"
+    }
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.der3318.GeneratePdfMark"
+    }
+}
+
+archivesBaseName = "auto-pdf-mark"
+version = "1.0"
+sourceCompatibility = "7"
+targetCompatibility = "7"
