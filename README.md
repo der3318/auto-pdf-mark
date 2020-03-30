@@ -20,12 +20,12 @@ A simple java-based tool that could generate the PDF bookmarks from the named li
 
 #### Build - Linux
 1. `$ ./gradlew shadowJar`
-2. `$ cp cp build/libs/auto-pdf-mark-1.0-all.jar auto-pdf-mark.jar`
+2. `$ cp build/libs/auto-pdf-mark-1.0-all.jar auto-pdf-mark.jar`
 
 
 #### Build - Windows
 1. `$ gradlew.bat shadowJar`
-2. `$ cp cp build\libs\auto-pdf-mark-1.0-all.jar auto-pdf-mark.jar`
+2. `$ cp build\libs\auto-pdf-mark-1.0-all.jar auto-pdf-mark.jar`
 
 
 ### Demonstrate
